@@ -1,0 +1,49 @@
+{
+    "info": {
+      "name": "Sample API Collection",
+      "description": "A simple collection for API testing.",
+      "_postman_id": "12345678-abcd-1234-abcd-123456789abc",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Get User",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/users/1",
+            "protocol": "https",
+            "host": ["jsonplaceholder", "typicode", "com"],
+            "path": ["users", "1"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create User",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\": \"John Doe\", \"email\": \"johndoe@example.com\"}"
+          },
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/users",
+            "protocol": "https",
+            "host": ["jsonplaceholder", "typicode", "com"],
+            "path": ["users"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
